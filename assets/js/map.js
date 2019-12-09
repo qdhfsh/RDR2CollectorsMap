@@ -68,7 +68,7 @@ var MapBase = {
   },
 
   loadMarkers: function () {
-    $.getJSON('data/items.json?nocache=' + nocache)
+    $.getJSON('data/items_bili.json?nocache=' + nocache)
       .done(function (data) {
         MapBase.setMarkers(data);
       });
@@ -77,7 +77,7 @@ var MapBase = {
   setMarkers: function (data) {
     $.each(data, function (_category, _markers) {
       $.each(_markers, function (key, marker) {
-        markers.push(new Marker(marker.text, marker.x, marker.y, marker.tool, marker.day, _category, marker.subdata, marker.video, true));
+        markers.push(new Marker(marker.text, marker.x, marker.y, marker.tool, marker.day, _category, marker.subdata, marker.video, marker.time_point, true));
       });
     });
     uniqueSearchMarkers = markers;
@@ -273,7 +273,7 @@ var MapBase = {
 
 
   updateMarkerContent: function (marker) {
-    var videoText = marker.video != null ? '<p align="center" style="padding: 5px;"><a href="' + marker.video + '" target="_blank">Video</a></p>' : '';
+    var videoText = marker.video != null ? '<p align="center" style="padding: 5px;"><a href="' + marker.video + '" target="_blank">B站视频</a> ' + marker.time_point + '</p>' : '';
     var popupTitle = `${marker.title} - ${Language.get("menu.day")} ${day}`;
     var popupContent = (marker.category == 'random') ? 'Random items resets 24 hours after picking up' : marker.description;
     var buttons = (marker.category == 'random') ? '' : `<div class="marker-popup-buttons">

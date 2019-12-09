@@ -5,17 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="./favicon.png" />
-  <title>Red Dead Online - Collectors Map</title>
+  <title>荒野大镖客线上—收藏家地图</title>
   <meta name="description"
-    content="Red Dead Online Collectors Map. Find all collectibles across the world and sell to Madam Nazar.">
+    content="荒野大镖客2收藏家地图，提供荒野大镖客线上收藏家职业地图。">
   <meta name="keywords"
-    content="Red Dead Online, Collectors Map, Collectors Map, Map, Interactive Map, Interactive, jeanropke map, jeanropke">
+    content="荒野大镖客,荒野大镖客地图,荒野大镖客线上,荒野大镖客攻略,荒野大镖客教程,荒野大镖客收藏家">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/js/jquery.cookie.js"></script>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css?nocache=124" />
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152707774-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	
+	gtag('config', 'UA-152707774-1');
+	</script>
+	
+	<!-- Baidu tongji -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?4baab325472bd8a58a2324e486fb353b";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 
 </head>
 
@@ -295,8 +315,10 @@
       <div class="input-container">
         <label for="tools" data-text="menu.language">Language</label>
         <select class="input-day" id="language">
+		  <option value="zh-s" selected>简体中文</option>
+          <option value="zh-t">繁体中文</option>
           <option value="de-de">Deutsch</option>
-          <option value="en-us" selected>English</option>
+          <option value="en-us">English</option>
           <option value="es-es">Español</option>
           <option value="fr-fr">Français</option>
           <option value="it-it">Italiano</option>
@@ -305,8 +327,6 @@
           <option value="ru">Русский</option>
           <option value="ar-ar">ٱلْعَرَبِيَّة</option>
           <option value="th-th">ภาษาไทย</option>
-          <option value="zh-s">简体中文</option>
-          <option value="zh-t">繁体中文</option>
         </select>
       </div>
       <div class="input-container">
@@ -433,18 +453,6 @@
   <script src="assets/js/menu.js?nocache=124"></script>
   <script src="assets/js/routes.js?nocache=124"></script>
   <script src="assets/js/scripts.js?nocache=124"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39999584-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-39999584-4');
-  </script>
 
 </body>
 

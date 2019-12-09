@@ -124,11 +124,11 @@ function init() {
     if (avaliableLanguages.includes(navigator.language.toLowerCase()))
       $.cookie('language', navigator.language.toLowerCase());
     else
-      $.cookie('language', 'en-us');
+      $.cookie('language', 'zh-s');
   }
 
   if (!avaliableLanguages.includes($.cookie('language')))
-    $.cookie('language', 'en-us');
+    $.cookie('language', 'zh-s');
 
   if (typeof $.cookie('removed-markers-daily') === 'undefined')
     $.cookie('removed-markers-daily', 'false', {
